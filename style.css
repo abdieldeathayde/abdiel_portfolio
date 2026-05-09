@@ -1,0 +1,300 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding não quebre o layout */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #003049;
+    color: #e5e7eb;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+li {
+    list-style: none;
+}
+
+/* ==========================================================================
+   HEADER & NAVBAR
+   ========================================================================== */
+.hero {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #004e7a, #020617);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.logo {
+    color: #34d399;
+    font-size: 1.5rem;
+}
+
+#menu {
+    display: flex;
+    gap: 25px;
+}
+
+#menu a:hover {
+    color: #34d399;
+}
+
+#hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    color: #34d399;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   HERO SECTION (INICIO)
+   ========================================================================== */
+.hero-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #34d399;
+    margin-bottom: 20px;
+    box-shadow: 0 0 30px rgba(52, 211, 153, 0.2);
+    transition: 0.5s;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(52, 211, 153, 0.4);
+}
+
+.intro {
+    color: #34d399;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-container h2 {
+    font-size: 3.5rem;
+    margin: 10px 0;
+}
+
+.descricao {
+    color: #9ca3af;
+    font-size: 1.2rem;
+}
+
+/* ==========================================================================
+   SEÇÕES GERAIS
+   ========================================================================== */
+section {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+section h2 {
+    color: #34d399;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* ==========================================================================
+   SOBRE MIM
+   ========================================================================== */
+.sobre-conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre-texto p {
+    color: #9ca3af;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.sobre-dados {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sobre-dados strong {
+    display: block;
+    font-size: 2.5rem;
+    color: #34d399;
+}
+
+/* ==========================================================================
+   CARDS (PROJETOS E HABILIDADES) - EFEITO UNIFICADO
+   ================================================================
+
+   .projeto-card, .habilidades-card {
+    background: rgba(2, 6, 23, 0.6);
+    border: 1px solid #192933;
+    border-radius: 15px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Efeito de Hover igual para ambos */
+.projeto-card:hover, .habilidades-card:hover {
+    transform: translateY(-12px);
+    border-color: #34d399;
+    background: rgba(2, 6, 23, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Projetos --- */
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.projeto-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    filter: grayscale(30%);
+    transition: 0.3s;
+}
+
+.projeto-card:hover img {
+    filter: grayscale(0%);
+}
+
+.projeto-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #34d399;
+    font-weight: bold;
+    border: 1px solid #34d399;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.projeto-card a:hover {
+    background: #34d399;
+    color: #020617;
+}
+
+/* --- Habilidades --- */
+.habilidades-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.habilidades-card h3 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.habilidades-card span {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(52, 211, 153, 0.1);
+    border: 1px solid #34d399;
+    color: #34d399;
+    font-size: 0.8rem;
+}
+
+/* ==========================================================================
+   CONTATO
+   ========================================================================== */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.contato-form input, .contato-form textarea {
+    background: #020617;
+    border: 1px solid #192933;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+.contato-form input:focus, .contato-form textarea:focus {
+    border-color: #34d399;
+}
+
+.contato-form button {
+    background: #34d399;
+    color: #020617;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE
+   ========================================================================== */
+@media (max-width: 768px) {
+    #hamburguer {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 5%;
+        background: #020617;
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #34d399;
+        z-index: 1000;
+    }
+
+    #menu.ativa {
+        display: flex;
+    }
+
+    .hero-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .sobre-dados {
+        gap: 20px;
+    }
+}
