@@ -9,7 +9,11 @@ Este projeto foi criado com foco em **simplicidade, responsividade e boa apresen
 ## 📸 Preview
 
 👉 Acesse o projeto:
+<<<<<<< HEAD
 🔗 [Deploy Vercel](https://abdielportfolio.vercel.app/)
+=======
+🔗 [https://github.com/abdieldeathayde/Portfolio-Abdiel](https://abdielportfolio.vercel.app/#habilidades))
+>>>>>>> refs/remotes/origin/main
 
 ---
 
