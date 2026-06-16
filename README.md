@@ -9,7 +9,7 @@ Este projeto foi criado com foco em **simplicidade, responsividade e boa apresen
 ## 📸 Preview
 
 👉 Acesse o projeto:
-🔗 [https://github.com/abdieldeathayde/Portfolio-Abdiel](https://github.com/abdieldeathayde/Portfolio-Abdiel)
+🔗 [https://github.com/abdieldeathayde/Portfolio-Abdiel](https://abdielportfolio.vercel.app/#habilidades))
 
 ---
 
