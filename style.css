@@ -7,8 +7,12 @@
     box-sizing: border-box; /* Garante que padding não quebre o layout */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #003049;
     color: #e5e7eb;
     line-height: 1.6;
@@ -40,6 +44,12 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(2, 6, 23, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(52, 211, 153, 0.1);
 }
 
 .logo {
@@ -114,7 +124,7 @@ li {
    SEÇÕES GERAIS
    ========================================================================== */
 section {
-    padding: 80px 5%;
+    padding: 100px 5%;
     text-align: center;
 }
 
@@ -128,8 +138,8 @@ section h2 {
 /* ==========================================================================
    SOBRE MIM
    ========================================================================== */
-.sobre-conteudo {
-    max-width: 800px;
+.container-small {
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -154,9 +164,9 @@ section h2 {
 
 /* ==========================================================================
    CARDS (PROJETOS E HABILIDADES) - EFEITO UNIFICADO
-   ================================================================
+   ========================================================================== */
 
-   .projeto-card, .habilidades-card {
+.projeto-card, .habilidades-card {
     background: rgba(2, 6, 23, 0.6);
     border: 1px solid #192933;
     border-radius: 15px;
@@ -211,11 +221,19 @@ section h2 {
 .habilidades-lista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.habilidades-card i {
+    font-size: 2.5rem;
+    color: #34d399;
+    margin-bottom: 15px;
 }
 
 .habilidades-card h3 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #fff;
 }
 
@@ -264,6 +282,13 @@ section h2 {
     font-size: 1rem;
 }
 
+footer {
+    padding: 40px;
+    text-align: center;
+    background: #020617;
+    color: #9ca3af;
+}
+
 /* ==========================================================================
    RESPONSIVIDADE
    ========================================================================== */
@@ -296,5 +321,256 @@ section h2 {
 
     .sobre-dados {
         gap: 20px;
+    }
+
+    /* Estilos Gerais das Seções */
+    .projects-section, .education-section {
+        padding: 60px 20px;
+        background-color: var(--bg-color, #ffffff); /* Adapte para a sua variável de fundo */
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: var(--title-color, #333333);
+    }
+
+    /* Grid de Projetos */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .project-card {
+        background: var(--card-bg, #f9f9f9);
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-content {
+        padding: 25px;
+    }
+
+    .project-content h3 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+        color: var(--primary-color, #0076ff);
+    }
+
+    .project-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #666666;
+        margin-bottom: 20px;
+    }
+
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .project-tags span {
+        background: #e1ecf4;
+        color: #39739d;
+        font-size: 0.8rem;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-weight: 500;
+    }
+
+    .project-links {
+        display: flex;
+        gap: 12px;
+    }
+
+    .btn-project {
+        display: inline-block;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 4px;
+        background-color: #333333;
+        color: #ffffff;
+        transition: background 0.2s ease;
+    }
+
+    .btn-project:hover {
+        background-color: #555555;
+    }
+
+    .btn-project.preview {
+        background-color: var(--primary-color, #0076ff);
+    }
+
+    .btn-project.preview:hover {
+        background-color: #0056b3;
+    }
+
+    /* Timeline de Formação Acadêmica */
+    .timeline {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        padding-left: 30px;
+        border-left: 2px solid #e0e0e0;
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .timeline-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: -36px;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--primary-color, #0076ff);
+        border: 2px solid var(--bg-color, #ffffff);
+    }
+
+    .timeline-date {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: var(--primary-color, #0076ff);
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .institution {
+        font-weight: 600;
+        color: #444444;
+        margin-bottom: 8px;
+        font-size: 1rem;
+    }
+
+    .edu-description {
+        font-size: 0.95rem;
+        color: #666666;
+        line-height: 1.5;
+    }
+}
+
+/* Seção de Experiência */
+.experience-section {
+    padding: 60px 20px;
+    background-color: var(--bg-color-alt, #fdfdfd); /* Fundo sutilmente diferente para quebrar as seções */
+}
+
+.experience-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    background: var(--card-bg, #ffffff);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.exp-title-company h3 {
+    font-size: 1.3rem;
+    color: var(--title-color, #1a202c);
+    margin: 0 0 5px 0;
+}
+
+.company-name {
+    font-size: 1rem;
+    color: var(--primary-color, #0076ff);
+    font-weight: 600;
+}
+
+.exp-date {
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: 500;
+    background: #edf2f7;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.exp-summary {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.exp-bullets {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.exp-bullets li {
+    font-size: 0.95rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.exp-bullets li strong {
+    color: #1a202c;
+}
+
+.exp-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.exp-techs span {
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    color: #4a5568;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .exp-date {
+        margin-top: 5px;
+        padding: 2px 10px;
     }
 }
