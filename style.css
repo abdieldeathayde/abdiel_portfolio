@@ -574,3 +574,11 @@ footer {
         padding: 2px 10px;
     }
 }
+
+#contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px
+
+}
