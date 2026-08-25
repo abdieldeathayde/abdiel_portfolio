@@ -1,130 +1,47 @@
-# 🚀 Portfolio Abdiel
+# 🚀 Portfólio - Abdiel de Athayde
 
-Portfólio pessoal desenvolvido para apresentar projetos, habilidades e experiências profissionais na área de desenvolvimento de software.
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://seu-link-da-vercel.vercel.app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-perfil)
 
-Este projeto foi criado com foco em **simplicidade, responsividade e boa apresentação profissional**, funcionando como uma vitrine online para recrutadores e empresas.
+Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e trajetórias profissionais na área de desenvolvimento de software. A aplicação foi construída com foco em responsividade, performance e boa apresentação visual, servindo como cartão de visita online para recrutadores e parceiros.
+
+👉 **[Acesse o projeto online aqui](https://seu-link-da-vercel.vercel.app)**
 
 ---
 
 ## 📸 Preview
 
-👉 Acesse o projeto:
-<<<<<<< HEAD
-🔗 [Deploy Vercel](https://abdielportfolio.vercel.app/)
-=======
-🔗 [https://github.com/abdieldeathayde/Portfolio-Abdiel](https://abdielportfolio.vercel.app/#habilidades))
->>>>>>> refs/remotes/origin/main
+![Preview do Projeto](./assets/preview.png)
 
 ---
 
 ## 🧠 Sobre o Projeto
 
-O **Portfolio Abdiel** é uma aplicação web estática que apresenta:
+O **Portfólio Abdiel** é uma aplicação web estática projetada para reunir a identidade profissional em um único lugar, apresentando:
 
-* 👨‍💻 Informações profissionais
-* 🛠️ Tecnologias e habilidades
-* 📂 Projetos desenvolvidos
-* 📞 Formas de contato
-* 🎨 Interface moderna e responsiva
-
-O objetivo é centralizar a identidade profissional em um único ambiente online.
+- 👨‍💻 **Resumo Profissional:** Trajetória e experiências no mercado.
+- 🛠️ **Habilidades Técnicas:** Competências em linguagens e ferramentas.
+- 📂 **Vitrine de Projetos:** Galeria interativa dos trabalhos realizados.
+- 📞 **Contato:** Acesso rápido ao e-mail e redes sociais.
+- 🎨 **UX/UI Moderna:** Design responsivo adaptado para mobile e desktop.
 
 ---
 
 ## 🧰 Tecnologias Utilizadas
 
-* **HTML5** — Estrutura da aplicação
-* **CSS3** — Estilização e layout responsivo
-* **JavaScript (Vanilla JS)** — Interatividade e comportamento dinâmico
+- **HTML5:** Estruturação semântica do conteúdo.
+- **CSS3:** Estilização moderna, variáveis CSS e layout responsivo (*Flexbox* e *CSS Grid*).
+- **JavaScript (Vanilla):** Manipulação de DOM para interatividade do menu e elementos dinâmicos.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Estrutura de Arquivos
 
-```
+```text
 Portfolio-Abdiel/
-│
-├── assets/        # Imagens e recursos visuais
-├── index.html     # Página principal
-├── style.css      # Estilos da aplicação
-├── menu.js        # Script de interação do menu
-└── README.md
-```
-
----
-
-## ⚙️ Como Executar o Projeto
-
-Como é um projeto estático, não precisa de instalação de dependências.
-
-### ✅ Opção 1 — Abrir diretamente
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/abdieldeathayde/Portfolio-Abdiel.git
-```
-
-2. Abra a pasta do projeto.
-
-3. Execute o arquivo:
-
-```
-index.html
-```
-
----
-
-### ✅ Opção 2 — Usando Live Server (Recomendado)
-
-Se estiver usando VS Code:
-
-1. Instale a extensão **Live Server**
-2. Clique com botão direito no `index.html`
-3. Selecione:
-
-```
-Open with Live Server
-```
-
----
-
-## 🎯 Objetivos do Projeto
-
-* Construir presença profissional online
-* Demonstrar conhecimentos em Frontend
-* Aplicar boas práticas de HTML, CSS e JS
-* Servir como base para futuras melhorias
-
----
-
-## 🚀 Melhorias Futuras
-
-* [ ] Animações avançadas
-* [ ] Dark Mode 🌙
-* [ ] Integração com API de projetos do GitHub
-* [ ] Formulário de contato funcional
-* [ ] Versão multilíngue (PT/EN)
-
----
-
-## 👨‍💻 Autor
-
-**Abdiel de Athayde**
-
-* 💼 Desenvolvedor Backend Java
-* 🌐 Apaixonado por tecnologia e desenvolvimento de software
-
-🔗 LinkedIn: *(adicione aqui)*
-🔗 GitHub: [https://github.com/abdieldeathayde](https://github.com/abdieldeathayde)
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT.
-Sinta-se livre para estudar, modificar e utilizar como referência.
-
----
-
-⭐ Se este projeto te ajudou ou inspirou, considere deixar uma estrela no repositório!
+├── assets/         # Imagens, ícones e recursos visuais
+├── index.html      # Página principal
+├── style.css       # Estilos da aplicação
+├── menu.js         # Script de navegação e interações
+└── README.md       # Documentação do projeto
