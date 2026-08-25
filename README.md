@@ -6,7 +6,7 @@
 
 Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e trajetórias profissionais na área de desenvolvimento de software. A aplicação foi construída com foco em responsividade, performance e boa apresentação visual, servindo como cartão de visita online para recrutadores e parceiros.
 
-👉 **[Acesse o projeto online aqui](https://seu-link-da-vercel.vercel.app)**
+👉 **[Acesse o projeto online aqui](https://abdielportfolio.vercel.app)**
 
 ---
 
