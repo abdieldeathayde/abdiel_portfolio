@@ -2,7 +2,7 @@
 
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://abdielportfolio.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-perfil)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abdieldeathayde)
 
 Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e trajetórias profissionais na área de desenvolvimento de software. A aplicação foi construída com foco em responsividade, performance e boa apresentação visual, servindo como cartão de visita online para recrutadores e parceiros.
 
