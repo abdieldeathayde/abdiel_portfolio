@@ -8,13 +8,6 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e tra
 
 👉 **[Acesse o projeto online aqui](https://abdielportfolio.vercel.app)**
 
----
-
-## 📸 Preview
-
-![Preview do Projeto](./assets/preview.png)
-
----
 
 ## 🧠 Sobre o Projeto
 
