@@ -8,6 +8,7 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e tra
 
 👉 **[Acesse o projeto online aqui](https://abdielportfolio.vercel.app)**
 
+---
 
 ## 🧠 Sobre o Projeto
 
@@ -16,7 +17,7 @@ O **Portfólio Abdiel** é uma aplicação web estática projetada para reunir a
 - 👨‍💻 **Resumo Profissional:** Trajetória e experiências no mercado.
 - 🛠️ **Habilidades Técnicas:** Competências em linguagens e ferramentas.
 - 📂 **Vitrine de Projetos:** Galeria interativa dos trabalhos realizados.
-- 📞 **Contato:** Acesso rápido ao e-mail e redes sociais.
+- 📞 **Contato:** Acesso rápido ao e-mail, WhatsApp e redes sociais[cite: 1].
 - 🎨 **UX/UI Moderna:** Design responsivo adaptado para mobile e desktop.
 
 ---
@@ -24,8 +25,8 @@ O **Portfólio Abdiel** é uma aplicação web estática projetada para reunir a
 ## 🧰 Tecnologias Utilizadas
 
 - **HTML5:** Estruturação semântica do conteúdo.
-- **CSS3:** Estilização moderna, variáveis CSS e layout responsivo (*Flexbox* e *CSS Grid*).
-- **JavaScript (Vanilla):** Manipulação de DOM para interatividade do menu e elementos dinâmicos.
+- **CSS3:** Estilização moderna, variáveis CSS (Dark Mode) e layout responsivo (*Flexbox* e *CSS Grid*).
+- **JavaScript (Vanilla):** Manipulação de DOM para navegação, envio/interações e comportamento dinâmico.
 
 ---
 
@@ -33,8 +34,19 @@ O **Portfólio Abdiel** é uma aplicação web estática projetada para reunir a
 
 ```text
 Portfolio-Abdiel/
-├── assets/         # Imagens, ícones e recursos visuais
-├── index.html      # Página principal
-├── style.css       # Estilos da aplicação
-├── menu.js         # Script de navegação e interações
-└── README.md       # Documentação do projeto
+├── api/
+│   └── script.js          # Scripts e integrações de API
+├── assets/                # Imagens, ícones e capturas de tela dos projetos
+│   ├── AppIFSC.jpeg
+│   ├── Linkedin.png
+│   ├── SistemaEstoque.png
+│   ├── email.png
+│   ├── foto-perfil.jpeg
+│   ├── portfolio RealCar.jpeg
+│   ├── portfolio-image.jpeg
+│   └── whatsapp.png
+├── index.html             # Página principal da aplicação
+├── style.css              # Estilos e tema visual do portfólio
+├── menu.js                # Script do menu interativo e responsivo
+├── post.js                # Scripts auxiliares de requisições/interações
+└── README.md              # Documentação do projeto
