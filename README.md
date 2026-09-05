@@ -1,52 +1,37 @@
-# 🚀 Portfólio - Abdiel de Athayde
+# 🚀 Portfólio Profissional | Abidiel - Backend Java & Spring Boot
 
-[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://abdielportfolio.vercel.app)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abdieldeathayde)
-
-Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e trajetórias profissionais na área de desenvolvimento de software. A aplicação foi construída com foco em responsividade, performance e boa apresentação visual, servindo como cartão de visita online para recrutadores e parceiros.
-
-👉 **[Acesse o projeto online aqui](https://abdielportfolio.vercel.app)**
+Desenvolvedor Backend com foco na construção de APIs RESTful escaláveis, arquitetura de microsserviços e automação de processos.
 
 ---
 
-## 🧠 Sobre o Projeto
-
-O **Portfólio Abdiel** é uma aplicação web estática projetada para reunir a identidade profissional em um único lugar, apresentando:
-
-- 👨‍💻 **Resumo Profissional:** Trajetória e experiências no mercado.
-- 🛠️ **Habilidades Técnicas:** Competências em linguagens e ferramentas.
-- 📂 **Vitrine de Projetos:** Galeria interativa dos trabalhos realizados.
-- 📞 **Contato:** Acesso rápido ao e-mail, WhatsApp e redes sociais[cite: 1].
-- 🎨 **UX/UI Moderna:** Design responsivo adaptado para mobile e desktop.
+### 🛠️ Tech Stack & Ferramentas
+* **Linguagens & Frameworks:** Java (8 ao 21), Spring Boot, Spring Data JPA, Spring Security.
+* **Bancos de Dados & ORM:** MySQL, PostgreSQL, Hibernate.
+* **DevOps & Containers:** Docker, Git, GitHub Actions.
+* **Outras Tecnologias:** Angular, JavaScript, Automação RPA, SAP Data Validation.
 
 ---
 
-## 🧰 Tecnologias Utilizadas
+### 📌 Projetos em Destaque
 
-- **HTML5:** Estruturação semântica do conteúdo.
-- **CSS3:** Estilização moderna, variáveis CSS (Dark Mode) e layout responsivo (*Flexbox* e *CSS Grid*).
-- **JavaScript (Vanilla):** Manipulação de DOM para navegação, envio/interações e comportamento dinâmico.
+#### 1. 🛒 Sistema de Gestão de Estoque
+* **Descrição:** API RESTful para controle de inventário e gestão de produtos com controle de acesso refinado.
+* **Tecnologias:** Java, Spring Boot, Spring Security, MySQL.
+* **Destaques:** Implementação de autenticação JWT e validação de regras de negócio complexas.
+* 🔗 [Ver Repositório](https://github.com/abdieldeathayde/Estoque)
+
+#### 2. 🍽️ RestauranteApp
+* **Descrição:** Backend para gerenciamento de pedidos, cardápios e fluxo operacional de restaurantes.
+* **Tecnologias:** Java 17, Spring Boot, JPA/Hibernate, MySQL.
+* 🔗 [Ver Repositório](https://github.com/abdieldeathayde/RestauranteApp)
+
+#### 3. 🚘 RealCarService
+* **Descrição:** Solução web para agendamento e gerenciamento de oficinas mecânicas.
+* **Tecnologias:** JavaScript, HTML5/CSS3, Deploy na Render.
+* 🔗 [Acessar Projeto Aplicação](https://realcarservice.onrender.com) | [GitHub](https://github.com/abdieldeathayde/RealCarService)
 
 ---
 
-## 📁 Estrutura de Arquivos
-
-```text
-Portfolio-Abdiel/
-├── api/
-│   └── script.js          # Scripts e integrações de API
-├── assets/                # Imagens, ícones e capturas de tela dos projetos
-│   ├── AppIFSC.jpeg
-│   ├── Linkedin.png
-│   ├── SistemaEstoque.png
-│   ├── email.png
-│   ├── foto-perfil.jpeg
-│   ├── portfolio RealCar.jpeg
-│   ├── portfolio-image.jpeg
-│   └── whatsapp.png
-├── index.html             # Página principal da aplicação
-├── style.css              # Estilos e tema visual do portfólio
-├── menu.js                # Script do menu interativo e responsivo
-├── post.js                # Scripts auxiliares de requisições/interações
-└── README.md              # Documentação do projeto
+### 📬 Contato
+* **LinkedIn:** [linkedin.com/in/abdieldeathayde](https://linkedin.com/in/abdieldeathayde)
+* **GitHub:** [github.com/abdieldeathayde](https://github.com/abdieldeathayde)

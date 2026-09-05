@@ -4,43 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdiel de Athayde | Desenvolvedor Backend</title>
+    
+    <!-- Metatags Open Graph para compartilhamento (LinkedIn/WhatsApp) -->
+    <meta property="og:title" content="Abdiel de Athayde | Desenvolvedor Backend">
+    <meta property="og:description" content="Portfólio de desenvolvimento Backend com Java, Spring Boot, APIs RESTful e Infraestrutura.">
+    <meta property="og:image" content="./assets/foto-perfil.jpeg">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
         <nav class="navbar">
             <h3 class="logo">DevPortfólio</h3>
-            <button id="hamburguer"><span id="hamburguer-icon"><i class="fa fa-bars"></i></span></button>
+            <button id="hamburguer" aria-label="Abrir Menu">
+                <span id="hamburguer-icon"><i class="fa fa-bars"></i></span>
+            </button>
             <ul id="menu">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#formacao">Formação</a></li>   
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="hero-container">
-            <p class="intro">Olá, eu sou Abdiel</p>
+            <p class="intro">Olá, eu sou Abidiel</p>
             <h2>Desenvolvedor BackEnd</h2>
-            <p class="descricao">Criando experiências digitais com código</p>
-            <img src="./assets/foto-perfil.jpeg" alt="Foto de perfil" class="foto-perfil">
+            <p class="descricao">Criando soluções escaláveis com Java e Ecossistema Spring</p>
+            <img src="./assets/foto-perfil.jpeg" alt="Foto de perfil de Abidiel" class="foto-perfil">
             <div class="social-links">
-                <a href="https://github.com/abdieldeathayde" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/abdieldeathayde" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/abdieldeathayde" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abdieldeathayde" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-
     </header>
 
     <section id="sobre">
         <div class="container-small">
             <h2>Sobre mim</h2>
             <div class="sobre-texto">
-                <p>Sou um desenvolvedor BackEnd apaixonado por criar soluções robustas e escaláveis. Tenho experiência acadêmica em projetos com Desenvolvimento fullstack com Java e Spring no Back-End e Angular no frontend
-                Estou sempre buscando novos desafios e oportunidades para crescer profissionalmente.</p>
+                <p>Sou desenvolvedor BackEnd com foco no ecossistema Java e Spring Boot, com experiência no desenvolvimento de APIs RESTful, persistência de dados e arquitetura de sistemas. Também possuo atuação em automação de processos internos (RPA), governança de Master Data no SAP e suporte à infraestrutura corporativa de TI.</p>
             </div>
             <div class="sobre-dados">
                 <div>
@@ -48,184 +55,202 @@
                     <span>Projetos concluídos</span>
                 </div>
                 <div>
-                    <strong>1+</strong>
-                    <span>Ano de experiência</span>
+                    <strong>2+</strong>
+                    <span>Anos de experiência</span>
                 </div>
                 <div>
-                    <strong> 4+ </strong>
-                    <span>Tecnologias</span>
+                    <strong>6+</strong>
+                    <span>Tecnologias principais</span>
                 </div>
             </div>
         </div>
-        <section id="projetos">
+    </section>
+
+    <section id="projetos">
         <h2>Meus projetos</h2>
         <div class="projetos-container">
             <div class="projeto-card">
                 <h3>Sistema de Restaurante</h3>
-                <p> Sistema de gerenciamento para restaurantes, desenvolvido para otimizar o fluxo de trabalho, desde o registro de pratos e mesas até o controle de pedidos e gestão de usuários.
-
-                A aplicação foi construída utilizando a arquitetura de microserviços/monolítica (escolha a que se aplica) com Spring Boot, garantindo uma API robusta e escalável, e MySQL como banco de dados para persistência dos dados..</p>
-                <img src="./assets/baixados.jpeg" alt="código">
-                <a href="https://github.com/abdieldeathayde/RestauranteApp" class="btn-projeto">Ver projeto</a>
+                <p>Gerenciamento para restaurantes com foco na otimização do fluxo de pedidos, mesas e cadastros. Desenvolvido com Spring Boot para uma API RESTful robusta e MySQL para persistência de dados.</p>
+                <img src="./assets/baixados.jpeg" alt="Código da aplicação de restaurante">
+                <a href="https://github.com/abdieldeathayde/RestauranteApp" class="btn-projeto" target="_blank">Ver projeto</a>
             </div>
             <div class="projeto-card">
                 <h3>Sistema de Biblioteca</h3>
-                <p>Sistema web para gestão de biblioteca — cadastro de livros, usuários, empréstimos, devoluções ou funcionalidades conforme o escopo do projeto.  
-                O objetivo é aplicar e demonstrar práticas de desenvolvimento web (frontend + backend) utilizando tecnologias modernas, além de servir como portfólio de projeto acadêmico/profissional.</p>
-                <img src="./assets/baixados.jpeg" alt="código">
-                <a href="https://github.com/abdieldeathayde/Biblioteca-Web">Ver projeto</a>
+                <p>Aplicação web para gestão completa de acervo, empréstimos, devoluções e usuários. Desenvolvida com boas práticas de arquitetura de software e integração contínua.</p>
+                <img src="./assets/baixados.jpeg" alt="Código da aplicação de biblioteca">
+                <a href="https://github.com/abdieldeathayde/Biblioteca-Web" class="btn-projeto" target="_blank">Ver projeto</a>
             </div>
             <div class="projeto-card">
-                <h3>Sistema de Gerenciamento de Produtos</h3>
-                <p>Sistema web para gerenciamento de produtos com importação de dados via Excel (XLSX).
-                    Tecnologias usadas: Java, Spring Boot, MySQL, HTML, CSS, JavaScript e MySQL.</p>
-                <img src="./assets/SistemaEstoque.png" alt="código">
-                <a href="https://github.com/abdieldeathayde/Estoque">Ver projeto</a>
+                <h3>Gerenciamento de Estoque</h3>
+                <p>Sistema web com suporte à importação massiva de dados via arquivos Excel (XLSX). Construído com Java, Spring Boot, MySQL e interface responsiva.</p>
+                <img src="./assets/SistemaEstoque.png" alt="Interface do sistema de estoque">
+                <a href="https://github.com/abdieldeathayde/Estoque" class="btn-projeto" target="_blank">Ver projeto</a>
             </div>
             <div class="projeto-card">
-                <h3>Sistema de Real Car & Service</h3>
-                <p>Sistema web para apresentação dos serviços oferecidos pela empresa Real Car Service. O cliente pode entrar em contato com o setor administrativo por email, whatsapp ou através de um formulário de contato.
-                    Tecnologias usadas: Java, Spring Boot, MySQL, HTML, CSS, JavaScript e MySQL.</p>
-                <img src="./assets/portfolio RealCar.jpeg" alt="código">
-                <a href="https://realcarservice.onrender.com/">Ver projeto</a>
+                <h3>Real Car & Service</h3>
+                <p>Landing page institucional corporativa para apresentação de serviços mecânicos com integração direta para contato via WhatsApp e formulário web.</p>
+                <img src="./assets/portfolio RealCar.jpeg" alt="Preview da landing page Real Car Service">
+                <a href="https://realcarservice.onrender.com/" class="btn-projeto" target="_blank">Ver projeto</a>
             </div>
             <div class="projeto-card">
-                <h3>Sistema de Gestão de Eventos do IFSC Gaspar IF-Eventos</h3>
-                <p>Este é um projeto Android desenvolvido em Kotlin para o gerenciamento e inscrição em eventos e cursos do IFSC (Instituto Federal de Santa Catarina). O aplicativo permite que alunos e servidores se inscrevam em atividades, acompanhem notícias recentes e monitorem seu progresso em tarefas específicas.
-                    Tecnologias usadas: Kotlin, Material Design, Firebase, Firebase Auth, Glide, Constraint Layout e Leanback.</p>
-                <img src="./assets/AppIFSC.jpeg" alt="código">
-                <a href="https://github.com/abdieldeathayde/IFSCEventosKotlin.git">Ver projeto</a>
+                <h3>IF-Eventos (IFSC Gaspar)</h3>
+                <p>Aplicativo Android nativo em Kotlin para controle de presenças, tarefas e inscrições em eventos acadêmicos para alunos e servidores.</p>
+                <img src="./assets/AppIFSC.jpeg" alt="Interface do aplicativo mobile IF-Eventos">
+                <a href="https://github.com/abdieldeathayde/IFSCEventosKotlin.git" class="btn-projeto" target="_blank">Ver projeto</a>
             </div>
         </div>
     </section>
-    </section>
-    <!-- SEÇÃO: EXPERIÊNCIA PROFISSIONAL -->
+
     <section id="experiencia" class="experience-section">
-        <div class="container">
-            <h2 class="section-title">Experiência Profissional</h2>
-            <div class="experience-timeline">
-
-                <!-- Experiência 1: Dev Java / Automação -->
-                <div class="experience-item">
-                    <div class="exp-header">
-                        <div class="exp-title-company">
-                            <h3>Desenvolvedor Back-End Java & Experiência profissional em Automação Industrial (RPA)</h3>
-                            <span class="company-name">Projetos Corporativos & Consultoria</span>
-                        </div>
-                        <span class="exp-date">2 Anos</span>
+        <h2 class="section-title">Experiência Profissional</h2>
+        
+        <div class="experience-grid">
+            <!-- Governança Brasil -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title-company">
+                        <h3>Técnico de Infraestrutura de TI</h3>
+                        <span class="company-name">Governança Brasil</span>
                     </div>
-                    <div class="exp-body">
-                        <p class="exp-summary">
-                            Atuação focada no desenvolvimento de aplicações robustas e escaláveis utilizando o ecossistema Java, além de liderar iniciativas de otimização de processos internos.
-                        </p>
-                        <ul class="exp-bullets">
-                            <li>Desenvolvimento e manutenção de APIs RESTful utilizando <strong>Spring Boot</strong>, <strong>Spring Data JPA</strong> e <strong>Spring Security</strong>.</li>
-                            <li>Implementação de arquiteturas limpas para persistência de dados e integração com bancos de dados relacionais (MySQL).</li>
-                            <li>Desenvolvimento de soluções de automação de processos internos utilizando <strong>RPA</strong>, resultando em uma <strong>redução de até 40% no tempo de execução</strong> de tarefas repetitivas.</li>
-                            <li>Atuação direta na padronização, validação e governança de dados mestres no sistema <strong>SAP</strong>, garantindo a consistência e confiabilidade das informações corporativas.</li>
-                        </ul>
-                        <div class="exp-techs">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>Spring Data JPA</span>
-                            <span>RPA</span>
-                            <span>SAP</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
+                    <span class="exp-date">Atual</span>
                 </div>
+                <p class="exp-summary">
+                    Atuação no suporte e manutenção da infraestrutura de TI corporativa, garantindo a disponibilidade, segurança e alta performance dos ambientes operacionais.
+                </p>
+                <ul class="exp-bullets">
+                    <li><strong>Suporte & Infraestrutura:</strong> Gestão e monitoramento de ambientes de rede, servidores e sistemas operacionais.</li>
+                    <li><strong>Sistemas & Dados:</strong> Suporte técnico especializado na resolução de incidentes e apoio ao gerenciamento de dados corporativos.</li>
+                    <li><strong>Automação & Processos:</strong> Otimização de rotinas de suporte técnico e melhoria contínua dos processos de TI.</li>
+                </ul>
+                <div class="exp-techs">
+                    <span>Infraestrutura de TI</span>
+                    <span>Redes</span>
+                    <span>Linux / Windows Server</span>
+                    <span>Suporte Técnico</span>
+                    <span>Gestão de Incidentes</span>
+                </div>
+            </div>
 
-                <!-- Adicione mais blocos de experiência aqui no futuro, se necessário -->
-
+            <!-- Bunge Alimentos -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title-company">
+                        <h3>Jovem Aprendiz — Automação & Master Data</h3>
+                        <span class="company-name">Bunge Alimentos</span>
+                    </div>
+                    <span class="exp-date">2021 - 2023</span>
+                </div>
+                <p class="exp-summary">
+                    Atuação focada na otimização de processos operacionais e corporativos por meio de automação de tarefas repetitivas e governança de dados mestres em sistemas ERP enterprise.
+                </p>
+                <ul class="exp-bullets">
+                    <li><strong>Automação Industrial & RPA (Control Room):</strong> Desenvolvimento e suporte na execução de automações via RPA, reduzindo em até 40% o tempo de execução de tarefas rotineiras.</li>
+                    <li><strong>Gestão de Master Data:</strong> Padronização, validação e higienização de dados mestres corporativos no SAP.</li>
+                    <li><strong>Eficiência Operacional:</strong> Mapeamento de fluxos operacionais e implementação de rotinas automatizadas.</li>
+                </ul>
+                <div class="exp-techs">
+                    <span>RPA</span>
+                    <span>Control Room</span>
+                    <span>Automação de Processos</span>
+                    <span>SAP (Master Data)</span>
+                    <span>Mapeamento de Processos</span>
+                    <span>Gestão de Dados</span>
+                </div>
             </div>
         </div>
     </section>
-
 
     <section id="habilidades">
         <h2>Habilidades Técnicas</h2>
-        <p>Tecnologias e ferramentas que utilizo para deseenvolver soluções completas</p>
+        <p>Tecnologias e ferramentas que utilizo para desenvolver soluções completas</p>
         <div class="habilidades-lista">
             <div class="habilidades-card">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5</h3>
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
             </div>
             <div class="habilidades-card">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS3</h3>
+                <i class="fas fa-leaf"></i>
+                <h3>Spring Boot</h3>
+            </div>
+            <div class="habilidades-card">
+                <i class="fas fa-database"></i>
+                <h3>MySQL / SQL</h3>
+            </div>
+            <div class="habilidades-card">
+                <i class="fab fa-docker"></i>
+                <h3>Docker</h3>
             </div>
             <div class="habilidades-card">
                 <i class="fab fa-js"></i>
                 <h3>JavaScript</h3>
             </div>
             <div class="habilidades-card">
-                <i class="fab fa-java"></i>
-                <h3>Java</h3>
-            </div>
-            <div class="habilidades-card">
-                <i class="fab fa-java"></i>
-                <h3>Spring</h3>
+                <i class="fab fa-git-alt"></i>
+                <h3>Git / GitHub</h3>
             </div>
         </div>
     </section>
 
-
-<!-- SEÇÃO: FORMAÇÃO ACADÊMICA -->
-<section id="formacao" class="education-section">
-    <div class="container">
-        <h2 class="section-title">Formação Acadêmica</h2>
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Graduação</div>
-                <div class="timeline-content">
-                    <h3>Análise e Desenvolvimento de Sistemas</h3>
-                    <h3>conluído em 12/2025</h3>
-                    <p class="institution">IFSC — Instituto Federal de Santa Catarina</p>
-                    <p class="edu-description">Foco em engenharia de software, arquitetura de sistemas, estruturas de dados e desenvolvimento de aplicações corporativas robustas.</p>
-                    <br><br>
+    <section id="formacao" class="education-section">
+        <div class="container">
+            <h2 class="section-title">Formação Acadêmica</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Graduação</div>
+                    <div class="timeline-content">
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <p class="completion">Concluído em 12/2025</p>
+                        <p class="institution">IFSC — Instituto Federal de Santa Catarina</p>
+                        <p class="edu-description">Foco em engenharia de software, arquitetura de sistemas, estruturas de dados e desenvolvimento de aplicações corporativas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Técnico</div>
+                    <div class="timeline-content">
+                        <h3>Curso Técnico em Informática</h3>
+                        <p class="completion">Concluído em 08/2018</p>
+                        <p class="institution">IFSC — Instituto Federal de Santa Catarina</p>
+                        <p class="edu-description">Fundamentos de lógica de programação, arquitetura de computadores, redes de computadores e desenvolvimento web.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Especialização</div>
+                    <div class="timeline-content">
+                        <h3>Formação Java Developer & Ecossistema Spring</h3>
+                        <p class="institution">Cursos de Extensão e Certificações</p>
+                        <p class="edu-description">Aprofundamento em APIs RESTful, Spring Boot, Spring Security, Spring Data JPA, testes automatizados e containers com Docker.</p>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Técnico</div>
-                <div class="timeline-content">
-                    <h3>Curso Ténico em Informática</h3>
-                    <h3>conluído em 08/2018</h3>
-                    <p class="institution">IFSC — Instituto Federal de Santa Catarina</p>
-                    <p class="edu-description">Foco em engenharia de software, arquitetura de sistemas, estruturas de dados e desenvolvimento de aplicações corporativas robustas.</p>
-                    <br><br>
-                </div>
-            </div>
-
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Especialização</div>
-                <div class="timeline-content">
-                    <h3>Formação Java Developer & Ecossistema Spring</h3>
-                    <p class="institution">Cursos de Extensão e Certificações</p>
-                    <p class="edu-description">Aprofundamento em APIs RESTful, Spring Boot, Spring Security, Spring Data JPA, testes automatizados e implantação de containers com Docker.</p>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="contato">
-        <a href="https://wa.me/5547984849363" target="_blank">
-            <img src="../assets/whatsapp.png" alt="WhatsApp" width="50" height="50">
-        </a>
-        <br><br>
-        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlGTfJwwWzNjlxfqZXgmmPNGwGxqLNSFPXFGtWhnDpPpJgcfQbcLFtwSrZdZbnLhLBPjXB"> <img src="../assets/email.png" alt="Email" width="50" height="50"> </a>
-        <br><br>
-        <a href="https://www.linkedin.com/in/abdieldeathayde" > <img src="../assets/Linkedin.png" alt="LinkedIn" width="50" height="50"> </a>
+        <div class="container-small">
+            <h2>Entre em Contato</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 25px;">Sinta-se à vontade para me enviar uma mensagem ou conectar-se nas redes!</p>
+            <div class="contato-links">
+                <a href="https://wa.me/5547984849363" target="_blank" aria-label="WhatsApp">
+                    <img src="./assets/whatsapp.png" alt="WhatsApp" width="50" height="50">
+                </a>
+                <a href="mailto:abdiel.athayde@gmail.com" target="_blank" aria-label="E-mail">
+                    <img src="./assets/email.png" alt="Email" width="50" height="50">
+                </a>
+                <a href="https://www.linkedin.com/in/abdieldeathayde" target="_blank" aria-label="LinkedIn">
+                    <img src="./assets/Linkedin.png" alt="LinkedIn" width="50" height="50">
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2026 Abdiel de Athayde. Desenvolvido com <i class="fa fa-heart"></i></p>
     </footer>
+
     <script src="menu.js"></script>
 </body>
+</html>

@@ -121,7 +121,7 @@ li {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary-color);
-    margin-bottom: 24px;
+    margin: 20px 0;
     box-shadow: var(--shadow-lg);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -153,6 +153,24 @@ li {
     font-size: 1.15rem;
     max-width: 600px;
     font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
 }
 
 /* ==========================================================================
@@ -201,6 +219,11 @@ section h2, .section-title {
     color: var(--primary-color);
 }
 
+.sobre-dados span {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
 /* ==========================================================================
    CARDS (PROJETOS E HABILIDADES)
    ========================================================================== */
@@ -228,8 +251,21 @@ section h2, .section-title {
     margin: 0 auto;
 }
 
+.projeto-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.projeto-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 .projeto-card img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 6px;
     margin: 15px 0;
     filter: brightness(0.9);
@@ -240,7 +276,7 @@ section h2, .section-title {
     filter: brightness(1);
 }
 
-.projeto-card a, .btn-project {
+.projeto-card a, .btn-projeto {
     display: inline-block;
     margin-top: 15px;
     color: #ffffff;
@@ -251,17 +287,17 @@ section h2, .section-title {
     font-size: 0.9rem;
 }
 
-.projeto-card a:hover, .btn-project:hover {
+.projeto-card a:hover, .btn-projeto:hover {
     background: var(--primary-hover);
 }
 
 /* --- Habilidades --- */
 .habilidades-lista {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 30px auto 0;
 }
 
 .habilidades-card {
@@ -269,39 +305,22 @@ section h2, .section-title {
 }
 
 .habilidades-card i {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 15px;
 }
 
 .habilidades-card h3 {
-    margin-bottom: 12px;
     color: var(--text-primary);
     font-size: 1.1rem;
     font-weight: 600;
 }
 
-.habilidades-card span {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 4px;
-    background: rgba(37, 99, 235, 0.1);
-    border: 1px solid rgba(37, 99, 235, 0.3);
-    color: #93c5fd;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
 /* ==========================================================================
-   EXPERIÊNCIA PROFISSIONAL & TIMELINE (CORRIGIDO PARA MODO ESCURO)
+   EXPERIÊNCIA PROFISSIONAL & TIMELINE
    ========================================================================== */
 .experience-section, .education-section {
     background-color: var(--bg-dark);
-    color: var(--text-primary);
-}
-
-.experience-section .section-title, 
-.education-section .section-title {
     color: var(--text-primary);
 }
 
@@ -372,23 +391,24 @@ section h2, .section-title {
     color: var(--text-primary);
 }
 
-.exp-techs, .project-tags {
+.exp-techs {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-top: 15px;
 }
 
-.exp-techs span, .project-tags span {
+.exp-techs span {
     background: var(--bg-surface-alt);
     border: 1px solid var(--border-color);
-    color: var(--text-secondary);
+    color: #93c5fd;
     font-size: 0.8rem;
     padding: 4px 10px;
     border-radius: 4px;
     font-weight: 500;
 }
 
-/* Timeline de Formação */
+/* --- Timeline de Formação --- */
 .timeline {
     max-width: 800px;
     margin: 0 auto;
@@ -421,11 +441,22 @@ section h2, .section-title {
     margin-bottom: 4px;
 }
 
+.timeline-content h3 {
+    color: var(--text-primary);
+    font-size: 1.15rem;
+}
+
+.completion {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
 .institution {
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 6px;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .edu-description {
@@ -434,55 +465,37 @@ section h2, .section-title {
 }
 
 /* ==========================================================================
-   CONTATO
+   CONTATO & FOOTER
    ========================================================================== */
 #contato {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: space-between;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+.contato-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
-.contato-form {
+.contato-links a {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto 0;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.contato-form input, .contato-form textarea {
-    background: var(--bg-surface);
-    border: 1px solid var(--border-color);
-    padding: 14px;
-    border-radius: 6px;
-    color: var(--text-primary);
-    font-family: inherit;
-    font-size: 0.95rem;
-    outline: none;
-    transition: border-color 0.2s;
+.contato-links a:hover {
+    transform: translateY(-5px);
+    opacity: 0.85;
 }
 
-.contato-form input:focus, .contato-form textarea:focus {
-    border-color: var(--primary-color);
-}
-
-.contato-form button {
-    background: var(--primary-color);
-    color: #ffffff;
-    border: none;
-    padding: 14px;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 0.95rem;
-    transition: background 0.2s ease;
-}
-
-.contato-form button:hover {
-    background: var(--primary-hover);
+.contato-links img {
+    border-radius: 8px;
+    object-fit: contain;
 }
 
 footer {
@@ -492,6 +505,10 @@ footer {
     border-top: 1px solid var(--border-color);
     color: var(--text-secondary);
     font-size: 0.9rem;
+}
+
+footer i {
+    color: #ef4444; /* Cor vermelha para o coração */
 }
 
 /* ==========================================================================
@@ -514,6 +531,7 @@ footer {
         border-radius: 8px;
         border: 1px solid var(--border-color);
         box-shadow: var(--shadow-lg);
+        z-index: 1001;
     }
 
     #menu.ativa {
@@ -535,5 +553,9 @@ footer {
 
     .exp-date {
         margin-top: 4px;
+    }
+
+    section {
+        padding: 60px 5%;
     }
 }
