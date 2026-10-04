@@ -1,37 +1,34 @@
-# 🚀 Portfólio Profissional | Abidiel - Backend Java & Spring Boot
+# Portfólio — Abdiel de Athayde
 
-Desenvolvedor Backend com foco na construção de APIs RESTful escaláveis, arquitetura de microsserviços e automação de processos.
+Portfólio profissional construído com Next.js, React, TypeScript e Tailwind CSS,
+com foco em desenvolvimento back-end com Java, Spring Boot, MySQL e Docker.
+O site apresenta projetos, experiência profissional, habilidades, formação e
+links de contato.
 
----
+## Requisitos
 
-### 🛠️ Tech Stack & Ferramentas
-* **Linguagens & Frameworks:** Java (8 ao 21), Spring Boot, Spring Data JPA, Spring Security.
-* **Bancos de Dados & ORM:** MySQL, PostgreSQL, Hibernate.
-* **DevOps & Containers:** Docker, Git, GitHub Actions.
-* **Outras Tecnologias:** Angular, JavaScript, Automação RPA, SAP Data Validation.
+- Node.js 20.9 ou superior
+- npm
 
----
+## Desenvolvimento
 
-### 📌 Projetos em Destaque
+```bash
+npm install
+npm run dev
+```
 
-#### 1. 🛒 Sistema de Gestão de Estoque
-* **Descrição:** API RESTful para controle de inventário e gestão de produtos com controle de acesso refinado.
-* **Tecnologias:** Java, Spring Boot, Spring Security, MySQL.
-* **Destaques:** Implementação de autenticação JWT e validação de regras de negócio complexas.
-* 🔗 [Ver Repositório](https://github.com/abdieldeathayde/Estoque)
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-#### 2. 🍽️ RestauranteApp
-* **Descrição:** Backend para gerenciamento de pedidos, cardápios e fluxo operacional de restaurantes.
-* **Tecnologias:** Java 17, Spring Boot, JPA/Hibernate, MySQL.
-* 🔗 [Ver Repositório](https://github.com/abdieldeathayde/RestauranteApp)
+## Build de produção
 
-#### 3. 🚘 RealCarService
-* **Descrição:** Solução web para agendamento e gerenciamento de oficinas mecânicas.
-* **Tecnologias:** JavaScript, HTML5/CSS3, Deploy na Render.
-* 🔗 [Acessar Projeto Aplicação](https://realcarservice.onrender.com) | [GitHub](https://github.com/abdieldeathayde/RealCarService)
+```bash
+npm run build
+npm start
+```
 
----
+As imagens utilizadas pelo site ficam em `public/assets`. Os dados dos
+projetos, experiências, habilidades e formação são mantidos em
+`src/app/page.tsx`.
 
-### 📬 Contato
-* **LinkedIn:** [linkedin.com/in/abdieldeathayde](https://linkedin.com/in/abdieldeathayde)
-* **GitHub:** [github.com/abdieldeathayde](https://github.com/abdieldeathayde)
+Para gerar URLs Open Graph com um domínio personalizado, defina
+`NEXT_PUBLIC_SITE_URL` com a URL pública do portfólio.

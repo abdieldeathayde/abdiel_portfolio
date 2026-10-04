@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ink: #080d18;
+  --color-panel: #111a2b;
+  --color-accent: #6ee7d2;
+  --shadow-glow: 0 0 80px rgba(110, 231, 210, 0.12);
+}
+
+:root {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #080d18;
+}
+
+::selection {
+  color: #080d18;
+  background: #6ee7d2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
