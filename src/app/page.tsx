@@ -45,6 +45,7 @@ const projects: Project[] = [
     image: "/assets/AgendaAI.png",
     imageAlt: "Interface do sistema AgendaAI",
     href: "https://agenda-ai-ts.vercel.app/dashboard",
+    
     technologies: ["ReactJS", "Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
